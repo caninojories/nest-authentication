@@ -20,7 +20,7 @@ export class AuthService {
      * the actual password
      */
     if (user && user.salt) {
-      hashPassword = await this.hashPassword(user.password, user.salt);
+      hashPassword = await this.hashPassword(pass, user.salt);
       pass = hashPassword;
     }
 
