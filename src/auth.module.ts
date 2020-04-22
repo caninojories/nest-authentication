@@ -1,10 +1,7 @@
 import { Module, DynamicModule } from '@nestjs/common';
 import { JwtModule, JwtModuleOptions } from '@nestjs/jwt';
 import { PassportModule } from '@nestjs/passport';
-import {
-  createAuthOptionProvider,
-  createUsersService,
-} from './providers';
+import { createAuthOptionProvider, createUsersService } from './providers';
 import { AuthService } from './auth.service';
 import { JwtStrategy } from './jwt.strategy';
 import { LocalStrategy } from './local.strategy';
